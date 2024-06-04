@@ -20,6 +20,7 @@
                 <p><i class="ri-settings-3-fill"></i>Settings</p>
             </router-link>
         </div>
+		<div class="flex"></div>
     </aside>
 </template>
 <style lang="scss" scoped>
@@ -28,18 +29,24 @@
 aside {
     display: flex;
     flex-direction: column;
+
     width: 300px;
     min-height: 100vh;
     overflow: hidden;
+    position: fixed;
 
     background-color: #D9D9D9;
     color: black;
 
     font-family: "Inter", sans-serif;
 
+    .flex {
+        flex: 1 1 0;
+    }
+
     .title {
         position: relative;
-        top: 12.5%;
+        top: 12.5vh;
         left: 30px;
 
         font-size: 40px;

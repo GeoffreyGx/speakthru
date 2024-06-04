@@ -5,7 +5,9 @@ import Sidebar from "./components/Sidebar.vue";
 <template>
   <div class="app">
     <Sidebar />
-    <router-view></router-view>
+    <div class="pages">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -30,6 +32,10 @@ button {
   main {
     flex: 1 1 0;
     padding: 2rem;
+  }
+
+  .pages {
+    margin-left: 300px;
   }
 }
 </style>
